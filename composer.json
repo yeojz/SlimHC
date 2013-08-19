@@ -1,9 +1,9 @@
 {
-    "name":        "yeojz/slim-controller",
+    "name":        "yeojz/SlimHC",
     "version":     "0.1",
     "type":        "library",
-    "description": "Controller and Loader for Slim Framework",
-    "homepage":    "http://github.com/yeojz/slim-controller",
+    "description": "Hierarchical Controller and Loader for Slim Framework",
+    "homepage":    "http://github.com/yeojz/SlimHC",
     "license":     "MIT",
     "authors": [
         {
@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-0": {
-            "SlimController": "./"
+            "SlimHC": "./"
         }
     }
 }
