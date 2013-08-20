@@ -8,7 +8,7 @@ class ModuleLoader {
 	 * Go through an array 
 	 * Require/Import each of the files defined by it.
 	 */
-	public static function register($modules, $directory) {
+	public static function load($modules, $directory) {
 		foreach ($modules as $module){
 			require $directory . '/' . $module . '.php';
 		}
@@ -20,7 +20,7 @@ class ModuleLoader {
 	 * Initialize and put it array
 	 * Return the array
 	 */
-	public static function load($modules, $namespace = "\\"){
+	public static function start_instance($modules, $namespace = "\\"){
 		$loader = array();
 
 		foreach ($modules as $module){
